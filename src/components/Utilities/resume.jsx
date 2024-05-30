@@ -1,4 +1,3 @@
-import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Button } from "@material-tailwind/react";
 export default function Resume() {
   return (
