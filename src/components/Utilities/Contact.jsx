@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import {
   Card,
@@ -29,10 +29,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_5byqndn",
-        "template_vfk33m2",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "Mdx-jEK3ZpSc6LiIu"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -48,6 +48,12 @@ const Contact = () => {
     setFormData({ to_name: "", from_name: "", email: "", message: "" });
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setSuccess("");
+    }, 5000);
+  }, [success]);
+
   return (
     <div className="bg-gray-400 w-full lg:h-full h-screen ">
       <h1 className="text-3xl font-bold uppercase pt-1">Contact me</h1>
@@ -57,7 +63,11 @@ const Contact = () => {
             Nice to meet you!.
           </Typography>
 
-          {success && <Alert className="mb-2" color="green">{success}</Alert>}
+          {success && (
+            <Alert className="mb-2" color="green">
+              {success}
+            </Alert>
+          )}
           <div className="w-1/4">
             <input
               type="text"
