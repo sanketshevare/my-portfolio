@@ -13,7 +13,7 @@ export default function TerminalUi() {
     };
 
     return (
-        <div className="w-1/2 mr-auto ml-auto h-96">
+        <div className="w-full h-full">
             <ReactTerminal
                 welcomeMessage={"start by typing 'help'"}
                 commands={commands}

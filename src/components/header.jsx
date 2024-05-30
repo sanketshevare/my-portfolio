@@ -30,7 +30,7 @@ export default function Header() {
         setShowCalendar(!showCalendar);
     }
     return (
-        <div className='h-full sticky top-0'>
+        <div className='h-full sticky top-0 z-[1000]'>
             <div className='grid grid-cols-3   bg-black ' >
                 <div className='text-white'>
                     <h1 className='text-left'>Welcome</h1>
