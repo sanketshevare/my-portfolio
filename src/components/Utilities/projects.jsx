@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
-    <div className="bg-gray-400 w-full h-full p-3 ">
+    <div className="bg-gray-400 w-full h-screen p-3 ">
       <h1 className="text-3xl font-bold uppercase">PROJECTS</h1>
 
       <div className="flex flex-col lg:flex-row gap-2 flex-wrap align-items-center justify-content-center ">
