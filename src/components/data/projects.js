@@ -48,4 +48,15 @@ export const projects = [
     host: "https://fashionflairhub.netlify.app/",
     image: "fashion.jpg",
   },
+  {
+    id: 5,
+    title: "EntraHub – Self-Service Access Portal (SSAP)",
+    description1: `React.js application built with Vite, styled using Tailwind CSS.
+• Integrated Azure Active Directory for enterprise authentication using MSAL...`,
+    description2: ` Utilized Firebase for backend services and real-time data management. `,
+    technologies: "React Vite | MSAL | Firebase | Tailwind CSS",
+    link: "https://github.com/sanketshevare/EntraHub",
+    host: "https://entra-hub.vercel.app/",
+    image: "entrahub.jpg",
+  },
 ];
