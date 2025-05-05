@@ -57,6 +57,6 @@ export const projects = [
     technologies: "React Vite | MSAL | Firebase | Tailwind CSS",
     link: "https://github.com/sanketshevare/EntraHub",
     host: "https://entra-hub.vercel.app/",
-    image: "entrahub.jpg",
+    image: "entrahub.svg",
   },
 ];
