@@ -10,8 +10,8 @@ const About = () => {
           <h2 className="text-2xl font-semibold">I'm Sanket Shevare</h2>
           <p className="text-lg">Aspiring Developer</p>
           <p className="text-lg">From Kolhapur, Maharashtra</p>
-          <p className="text-lg">+91-7028573365</p>
-          <p className="text-lg">sanketshevare7675@gmail.com</p>
+          <p className="text-lg">+91-9075257675</p>
+          <p className="text-lg">sanketshevare1607@gmail.com</p>
         </section>
 
         {/* <section className="mb-5">
